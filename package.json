@@ -1,0 +1,18 @@
+{
+	"name": "more-mern",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"client-install": "yarn add --prefix client",
+		"start": "node .",
+		"server": "nodemon index.js",
+		"client": "cd client && yarn start",
+		"dev": "concurrently \"yarn server\" \"yarn client\""
+	},
+	"dependencies": {
+		"concurrently": "^4.1.0",
+		"express": "^4.16.4",
+		"mongoose": "^5.3.15"
+	}
+}
