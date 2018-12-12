@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import uuid from 'uuid';
+import PropTypes from 'prop-types';
 
 import {
 	Button,
@@ -34,7 +35,7 @@ class ItemModal extends Component {
 	handleSubmit = e => {
 		e.preventDefault();
 		if (this.state.text) {
-			const todo = { id: uuid(), text: this.state.text };
+			const todo = { _id: uuid(), text: this.state.text };
 			this.props.addItem(todo);
 			this.setState({
 				text: ''
@@ -79,6 +80,10 @@ class ItemModal extends Component {
 		);
 	}
 }
+
+ItemModal.propTypes = {
+	addItem: PropTypes.func.isRequired
+};
 
 export default connect(
 	null,
