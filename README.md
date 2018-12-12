@@ -2,6 +2,7 @@
 
 
 Full stack application. This app uses Node, Express, MongoDB, React and Redux.
+> Goal: Get practice with MongoDB
 
 ---
 
