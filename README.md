@@ -5,16 +5,13 @@
 ## Quick Start
 
 ```bash
-# Server
+
+# Server & Client
+
 # Install dependencies
 yarn install
 
-# Run on localhost:4000
+# Run on localhost
 yarn start
 
-# Client
-# Install dependencies
-
-# Run on localhost:3000
-yarn start
 ```
