@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import uuid from 'uuid';
+//import uuid from 'uuid';
 import PropTypes from 'prop-types';
 
 import {
@@ -35,7 +35,7 @@ class ItemModal extends Component {
 	handleSubmit = e => {
 		e.preventDefault();
 		if (this.state.text) {
-			const todo = { _id: uuid(), text: this.state.text };
+			const todo = { text: this.state.text };
 			this.props.addItem(todo);
 			this.setState({
 				text: ''
